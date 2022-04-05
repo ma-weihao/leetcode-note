@@ -1,6 +1,7 @@
 package top.wello.leetcode
 
 import java.util.*
+import kotlin.Pair
 
 /**
  * Created by maweihao on 12/28/20
@@ -26,4 +27,15 @@ internal class Solution {
         }
         return count
     }
+}
+
+public data class Pair<out A, out B>(
+    public val first: A,
+    public val second: B
+) {
+
+    /**
+     * Returns string representation of the [Pair] including its [first] and [second] values.
+     */
+    public override fun toString(): String = "($first, $second)"
 }

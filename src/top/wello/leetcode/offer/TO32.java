@@ -55,6 +55,7 @@ public class TO32 {
             }
             res.add(inner);
         }
+        int[] a = new int[2];
         return res;
     }
 
