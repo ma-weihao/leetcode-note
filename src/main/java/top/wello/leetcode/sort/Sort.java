@@ -21,9 +21,9 @@ public class Sort {
 
     private static void quickSortInner(int[] arr, int left, int right) {
         if (left < right) {
-            int par = partition(arr, left, right);
-            quickSortInner(arr, left, par - 1);
-            quickSortInner(arr, par + 1, right);
+            int partition = partition(arr, left, right);
+            quickSortInner(arr, left, partition - 1);
+            quickSortInner(arr, partition + 1, right);
         }
     }
 
